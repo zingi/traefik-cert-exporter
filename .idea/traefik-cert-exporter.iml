@@ -22,6 +22,8 @@
       <sourceFolder url="file://$MODULE_DIR$/target/debug/build/proc-macro2-c3c1b6ec4a309b2b/out" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/debug/build/ryu-40f83b0ddf5bb635/out" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/debug/build/serde-369e2a5979e4dc51/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/debug/build/serde-a7a3499fbacfe367/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/target/debug/build/serde_derive-b87116f1b067ae3a/out" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/debug/build/serde_json-dd38c5670e8e2722/out" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/debug/build/syn-90bcd06b98b4050c/out" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/debug/build/tokio-19b8debf55041b48/out" isTestSource="false" />

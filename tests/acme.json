@@ -1,0 +1,36 @@
+{
+  "http": {
+    "Account": {
+      "Email": "john.doe@example.com",
+      "Registration": {
+        "body": {
+          "status": "valid",
+          "contact": [
+            "mailto:john.doe@example.com"
+          ]
+        },
+        "uri": "https://acme-v02.api.letsencrypt.org/acme/acct/123"
+      },
+      "PrivateKey": "bXkga2V5",
+      "KeyType": "4096"
+    },
+    "Certificates": [
+      {
+        "domain": {
+          "main": "matrix.example.org"
+        },
+        "certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCmhlcmUgaXMgc29tZSBjZXJ0aWZpY2F0ZSBjb250ZW50Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0KCi0tLS0tQkVHSU4gQ0VSVElGSUNBVEUtLS0tLQpoZXJlIGlzIHRoZSBzZWNvbmQgY2VydGlmaWNhdGUgY29udGVudAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCgotLS0tLUJFR0lOIENFUlRJRklDQVRFLS0tLS0KaGVyZSBpcyB0aGUgdGhpcmQgY2VydGlmaWNhdGUgY29udGVudAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+        "key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQp0aGlzIGlzIGEgcHJpdmF0ZSBrZXkKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K",
+        "Store": "default"
+      },
+      {
+        "domain": {
+          "main": "traefik.example.org"
+        },
+        "certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCmFiYwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCgotLS0tLUJFR0lOIENFUlRJRklDQVRFLS0tLS0KeHl6Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0KCi0tLS0tQkVHSU4gQ0VSVElGSUNBVEUtLS0tLQpoZWxsbyB3b3JsZAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+        "key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQphbm90aGVyIHByaXZhdGUga2V5Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==",
+        "Store": "default"
+      }
+    ]
+  }
+}
