@@ -1,6 +1,7 @@
 use base64::{decode, DecodeError};
 use serde::Deserialize;
 
+// collection of errors, which can occur while exporting stuff from traefik
 quick_error! {
     #[derive(Debug)]
     pub enum AcmeError {
@@ -68,6 +69,11 @@ impl Http {
     /// returns all Certificate instances
     pub fn get_certificates(&self) -> &Vec<Certificate> {
         &self.certificates
+    }
+
+    pub fn get_certificate(&self, name: &String) -> Option<&Certificate> {
+        let domain: &str = name.split(".crt").collect::<Vec<&str>>().get(0).unwrap();
+        self.certificates.iter().find(|c| c.domain.main.eq(&domain))
     }
 }
 

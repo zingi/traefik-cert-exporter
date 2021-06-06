@@ -5,6 +5,7 @@ use tracing_subscriber::fmt::time::ChronoUtc;
 use tracing_subscriber::util::SubscriberInitExt;
 use tracing_subscriber::FmtSubscriber;
 use traefik_cert_exporter::export;
+use traefik_cert_exporter::rest;
 
 #[tokio::main]
 async fn main() {
@@ -17,4 +18,11 @@ async fn main() {
         .init();
 
     info!("Starting ...");
+
+    let routes = rest::routes::init_routes();
+    let rest_future = warp::serve(routes).run(([0, 0, 0, 0], 3030));
+
+    info!("REST endpoint listening on: 3030");
+
+    rest_future.await;
 }
